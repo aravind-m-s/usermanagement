@@ -15,6 +15,10 @@ func main() {
 
 	server, err := dependency.InitializeDependencies(cnf)
 
+	if err != nil {
+		log.Fatal("Unable to get server because of: ", err)
+	}
+
 	server.Start(cnf)
 
 }
