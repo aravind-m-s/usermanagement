@@ -21,7 +21,6 @@ func NewUserHandler(useCase useCaseInterface.UserUserCase) *UserHandler {
 }
 
 func (cr *UserHandler) GetAllUsers(c *gin.Context) {
-
 }
 
 func (cr *UserHandler) GetSingleUser(c *gin.Context) {
